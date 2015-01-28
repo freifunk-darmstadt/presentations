@@ -81,16 +81,17 @@ ca. 80 Accesspoints
 \begin{frame}{Ausbauplan}
 \vfill
 \begin{itemize}
-	\item öffentliche Plätze und Staatstheater, Haltestellen, Krankenhäuser, \ldots)
-	\item Hotels, Gaststätten, öffentliche Einrichtungen, \ldots
-	\item Parks (z.B. Herrengarten, Prinz-Emil-Garten, \ldots)
-	\item private Wohnungen, Studentenwohnheime, \ldots
-	\item hochgelegene Plätze für Richtfunk (Langer Ludwig, Kirchtürme, Hochzeitsturm, h$\_$da Hochhaus \ldots)
+	\item öffentliche Plätze, Staatstheater, Haltestellen, Krankenhäuser
+	\item Hotels, Gaststätten, öffentliche Einrichtungen
+	\item Parks (z.B. Herrengarten, Prinz-Emil-Garten)
+	\item private Wohnungen, Studentenwohnheime
+	\item hochgelegene Plätze für Richtfunk (z.B. Langer Ludwig, Kirchtürme, Hochzeitsturm, h$\_$da Hochhaus)
 \end{itemize}
 \vfill
+\pause
 \begin{itemize}
-	\item zur Abdeckung stellen private oder öffentliche Anlieger der Freifunk-Community Standorte zur Verfügung oder betreiben eigene Freifunk-Router
-	\item Durchführung von Informationsveranstaltungen und Workshops zur Steigerung des Bekanntheitsgrades
+	\item Anlieger stellen der Freifunk-Community Standorte zur Verfügung und betreiben eigene Freifunk-Router
+	\item Durchführung von Informationsveranstaltungen und Workshops über Freifunk und den sicheren Umgang damit
 \end{itemize}
 \vfill
 \end{frame}
@@ -101,21 +102,21 @@ Handelsübliche Modelle im 2.4GHz- und 5GHz-Band
 \vfill
 Für den Heimbedarf oder kleinere öffentliche Bereiche:
 \begin{itemize}
-\item bis zu 20 Clients pro Gerät
-\item 30-50\euro{}
+\item bis zu 15-25 Clients pro Gerät
+\item 30-70\euro{}
 \end{itemize}
 \vfill
 
 Größere Inneninstallationen:
 \begin{itemize}
-\item bis zu 200 Clients pro Gerät
+\item bis zu 100 Clients pro Gerät und Frequenzband
 \item ca. 250\euro{}
 \end{itemize}
 \vfill
 
 Außeneinsatz:
 \begin{itemize}
-\item bis zu 200 Clients pro Gerät
+\item bis zu 100 Clients pro Gerät und Frequenzband
 \item Kosten abhängig von Frequenzband, Geschwindigkeit und Antennentyp, 100-600\euro{}
 \end{itemize}
 \vfill
@@ -136,20 +137,64 @@ Wie sieht die Leistungsfähigkeit der technischen Lösung am Beispiel Luisenplat
 \begin{itemize}
 \item Bereitstellung von Standorten/Montageflächen
 \item Bereitstellung von Strom und Internetanbindung/Richtfunk
-\item Kauf oder Sponsoring der notwendigen Hardware
-\item evtl. Durchführung professioneller Montagearbeiten
+\item Erwerb oder Sponsoring der notwendigen Hardware
+\item standortabhängig Durchführung fachgerechter Montagearbeiten
 \end{itemize}
 \vfill
 \end{frame}
 
-\section{Betrieb}
-\begin{frame}{Betrieb}
-Wie wird der Betrieb sichergestellt?
-Ist ein durchgehender Betrieb sichergestellt?
-Welche Reaktionszeiten/Wiederherstellungszeiten werden garantiert?
+\section{Organisation}
+\begin{frame}{Organisation}
 \vfill
-We do not operate the devices. We only provide the firmware and VPN infrastructure and can be consulted w.r.t. coverage issues and other problems.
+\begin{itemize}
+\item das Freifunk-Kernteam ist zuständig für
+	\begin{itemize}
+	\item Netzwerkinfrastruktur
+	\item Firmwareaktualisierung
+	\item Communitymanagement
+	\item Support
+	\end{itemize}
+\vfill
+\item die Freifunk-Community besitzt die Knoten und ist für deren Betrieb verantwortlich
+\end{itemize}
+\vfill
 \end{frame}
 
+\begin{frame}{Organisation - Infrastruktur}
+\vfill
+\begin{itemize}
+	\item Multiple VPN-Endpunkte
+	\item Redundante Internetanbindung
+	\item kontinuierliches Monitoring aller kritischen Systeme
+\end{itemize}
+\vfill
+Zeit bis zum Failover bei Ausfall einer Internetanbindung: max. 60s
+\vfill
+\end{frame}
+
+\begin{frame}{Organisation - Firmware}
+\vfill
+\begin{itemize}
+	\item Gluon Framework, basierend auf OpenWrt
+	\item Entwicklung durch deutschlandweite Community
+	\item integrierter Updatemechanismus
+	\begin{itemize}
+		\item Integrität und Authentizität durch kryptographische Signatur sichergestellt
+	\end{itemize}
+\end{itemize}
+\vfill
+Ausrollen neuer Firmware-Releases binnen 24 Stunden
+\vfill
+\end{frame}
+	
+\begin{frame}{Organisation - Communitymanagement}
+\vfill
+\begin{itemize}
+\item Regelmäßige Informationsveranstaltungen
+\item Support bei unseren Treffen und Online
+\item Öffentlichkeitsarbeit
+\end{itemize}
+\vfill
+\end{frame}
 
 \end{document}
