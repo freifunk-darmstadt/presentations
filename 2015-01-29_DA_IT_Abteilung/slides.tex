@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[]{beamer}
 \usepackage[utf8]{inputenc}
 \usetheme{default}
 \usecolortheme{dove}
@@ -45,10 +45,10 @@
 \section{Was ist Freifunk?}
 \begin{frame}{Was ist Freifunk?}
 \begin{itemize}
-	\item Teil einer weltweiten Bewegung zur Etablierung von offenen und freiem Netzzugang
-	\item neben der Bereitstellung eines Internetzugangs auch Plattform für lokale Dienste
-	\item dezentral und gemeinschaftlich von Bürgern, Vereinen, Unternehmern und Institutionen betrieben
-	\item robuste Netzwerktopologie durch Verwendung von Mesh-Netzwerken und dezentralen Routingalgorithmen
+	\item Teil einer weltweiten Bewegung zur Etablierung von offenen und freiem Netzzugang \pause
+	\item neben der Bereitstellung eines Internetzugangs auch Plattform für lokale Dienste \pause
+	\item dezentral und gemeinschaftlich von Bürgern, Vereinen, Unternehmern und Institutionen betrieben \pause
+	\item robuste Netzwerktopologie durch Verwendung von Mesh-Netzwerken und dezentralen Routingalgorithmen \pause
 	\item Freifunk Darmstadt: Initiative des Chaos Darmstadt e.V.
 \end{itemize}
 \end{frame}
@@ -64,7 +64,7 @@
 \section{Freifunk Darmstadt}
 \begin{frame}{Freifunk Darmstadt}
 \framesubtitle{Knotenkarte}
-\centeredimage[aktuell $\sim$ 80 Knoten in Betrieb]{images/ffmap_darmstadt}
+\centeredimage[ \pause aktuell $\sim$ 80 Knoten in Betrieb]{images/ffmap_darmstadt}
 \end{frame}
 
 \begin{frame}{Freifunk Darmstadt}
@@ -78,12 +78,12 @@
 \end{frame}
 
 \begin{frame}{Freifunk Darmstadt}
-\framesubtitle{Aufgabenbereich}
+\framesubtitle{Aufgabenbereiche}
 \begin{itemize}
-\item Regelmäßige Informationsveranstaltungen und Workshops
-\item Support bei unseren Treffen oder Online
-\item Öffentlichkeitsarbeit
-\item Core Team: Betrieb des Gateway-Netzes sowie der zum Betrieb notwendigen Dienste
+\item Regelmäßige Informationsveranstaltungen und Workshops \pause
+\item Support bei unseren Treffen oder Online \pause
+\item Öffentlichkeitsarbeit \pause
+\item Betrieb des Gateway-Netzes sowie der zum Betrieb notwendigen Dienste
 \end{itemize}
 \end{frame}
 
@@ -92,20 +92,20 @@
 \begin{frame}{Architektur}
 \framesubtitle{Freifunk-Knoten}
 \begin{itemize}
-	\item Anlieger stellen Standorte zur Verfügung und betreiben eigene Freifunk-Knoten
-	\item dienen als Access-Points für Endgeräte
+	\item Anlieger stellen Standorte zur Verfügung und betreiben eigene Freifunk-Knoten \pause
+	\item dienen als Access-Points für Endgeräte \pause
 	\begin{itemize}
-		\item handelsübliche Hardware
-		\item Gluon als Firmware-Framework
+		\item handelsübliche Hardware \pause
+		\item Gluon als Firmware-Framework \pause
 		\begin{itemize}
-			\item Entwicklung durch deutschlandweite Community
-			\item basierend auf OpenWrt $\rightarrow$ breite Hardwareunterstützung
-			\item angepasste Images für verschiedene Hardwaremodelle \newline $\rightarrow$ vom Core Team erzeugt und bereitgestellt
+			\item Entwicklung durch deutschlandweite Community \pause
+			\item basierend auf OpenWrt $\rightarrow$ breite Hardwareunterstützung \pause
+			\item angepasste Images für verschiedene Hardwaremodelle  \pause \newline $\rightarrow$ vom Core Team erzeugt und bereitgestellt \pause
 		\end{itemize}
-		\item integrierter Updatemechanismus
+		\item integrierter Updatemechanismus \pause
 		\begin{itemize}
-			\item Integrität und Authentizität der Updates durch kryptographische Signaturen
-			\item 4-Augen-Prinzip
+			\item Integrität und Authentizität der Updates durch kryptographische Signaturen \pause
+			\item 4-Augen-Prinzip \pause
 			\item Ausrollen binnen 24 Stunden, bei SSH-Zugang auf Knoten sogar unmittelbar auslösbar
 		\end{itemize}
 	\end{itemize}
@@ -121,23 +121,23 @@
 \begin{frame}{Architektur}
 \framesubtitle{Netzaufbau}
 \begin{itemize}
-	\item Knoten
+	\item Knoten \pause
 	\begin{itemize}
-		\item verbinden sich zum Freifunk-Netz\newline
-		$\rightarrow$ über VPN oder Mesh mit sichtbaren benachbarten Knoten
-		\item stellen WLAN für Clients zur Verfügung
+		\item verbinden sich zum Freifunk-Netz\newline \pause
+		$\rightarrow$ über VPN oder Mesh mit sichtbaren benachbarten Knoten \pause
+		\item stellen WLAN für Clients zur Verfügung \pause
 	\end{itemize}
-	\item Gateways
+	\item Gateways \pause
 	\begin{itemize}
-		\item dienen als Backbone zur Anbindung der Knoten
-		\item stellen Basisdienste (DHCP, RA, DNS, NTP) zur Verfügung
-		\item routen Traffic ins Internet (Uplink, meist über VPN-Tunnel von Drittanbietern)
+		\item dienen als Backbone zur Anbindung der Knoten \pause
+		\item stellen Basisdienste (DHCP, RA, DNS, NTP) zur Verfügung \pause
+		\item routen Traffic ins Internet (Uplink, meist über VPN-Tunnel von Drittanbietern) \pause
 	\end{itemize}
-	\item zusätzliche Dienste
+	\item zusätzliche Dienste \pause
 	\begin{itemize}
-		\item Update-Server
-		\item Sammlung von Metriken
-		\item Monitoring
+		\item Update-Server \pause
+		\item Sammlung von Metriken \pause
+		\item Monitoring \pause
 		\item \ldots
 	\end{itemize}
 \end{itemize}
@@ -147,12 +147,12 @@
 \framesubtitle{Ausfallsicherheit}
 \vfill
 \begin{itemize}
-	\item mehrere Gateways zur Verbindung ins Freifunk-Netz (neben Mesh-Funktionalität)
-	\item redundante Internetversorgung durch die Uplink-Gateways
-	\item kontinuierliches Monitoring aller kritischen Systeme
+	\item mehrere Gateways zur Verbindung ins Freifunk-Netz (neben Mesh-Funktionalität) \pause
+	\item redundante Internetversorgung durch die Uplink-Gateways \pause
+	\item kontinuierliches Monitoring aller kritischen Systeme \pause
 \end{itemize}
 \begin{center}
-\includegraphics[width=\textwidth]{images/ffmap_graph}
+\includegraphics[width=\textwidth]{images/ffmap_graph} \pause
 \end{center}
 \vfill
 \small{Zeit bis zum automatischen Failover bei Ausfall eines Uplinks: max. 60s}
@@ -163,41 +163,44 @@
 
 \section{Hardware}
 \begin{frame}{Verwendete Hardware}
-Handelsübliche Modelle im 2.4GHz- und 5GHz-Band
+Handelsübliche Modelle im 2.4GHz- und 5GHz-Band \pause
 \vfill
-Für den Heimbedarf oder kleinere öffentliche Bereiche:
+Für den Heimbedarf oder kleinere öffentliche Bereiche: \pause
 \begin{itemize}
 \item bis zu 15-25 Clients pro Gerät
 \item 30-70\euro{}
 \end{itemize}
 \vfill
+ \pause
 
-Größere Inneninstallationen:
+Größere Inneninstallationen: \pause
 \begin{itemize}
 \item bis zu 200 Clients pro Gerät
 \item 100-250\euro{}
 \end{itemize}
 \vfill
+\pause
 
-Größerer Außeneinsatz:
+Größerer Außeneinsatz: \pause
 \begin{itemize}
 \item bis zu 200 Clients pro Gerät
 \item Kosten abhängig von verwendeten Frequenzbändern, Bandbreite und Antennentyp, 100-600\euro{}
 \end{itemize}
 \vfill
 \end{frame}
+\pause
 
 
 
 
 \section{Standorte}
 \begin{frame}{Standorte}
-Freifunk bietet für viele Anwendungsfelder eine kosteneffiziente Möglichkeit, freien Netzzugang anzubieten:\newline
+Freifunk bietet für viele Anwendungsfelder eine kosteneffiziente Möglichkeit, freien Netzzugang anzubieten:\newline \pause
 \begin{itemize}
-	\item öffentliche Plätze, Staatstheater, Haltestellen, Krankenhäuser
-	\item Hotels, Gaststätten, öffentliche Einrichtungen
-	\item Parks (z.B. Herrengarten, Prinz-Emil-Garten)
-	\item private Wohnungen, Studentenwohnheime
+	\item öffentliche Plätze, Staatstheater, Haltestellen, Krankenhäuser \pause
+	\item Hotels, Gaststätten, öffentliche Einrichtungen \pause
+	\item Parks (z.B. Herrengarten, Prinz-Emil-Garten) \pause
+	\item private Wohnungen, Studentenwohnheime \pause
 	\item hochgelegene Plätze für Richtfunk (z.B. Langer Ludwig, Kirchtürme, Hochzeitsturm, h$\_$da Hochhaus)
 \end{itemize}
 \end{frame}
@@ -212,7 +215,7 @@ Freifunk bietet für viele Anwendungsfelder eine kosteneffiziente Möglichkeit, 
 
 \begin{frame}{Konzept: Luisenplatz}
 \framesubtitle{Hardwarevorschlag}
-Annahme: Montage der Freifunk-Knoten auf den Anzeigesäulen der HEAG mobilo
+Annahme: Montage der Freifunk-Knoten auf den Anzeigesäulen der HEAG mobilo \pause
 
 
 \begin{minipage}{0.4\textwidth} 
@@ -230,6 +233,7 @@ Annahme: Montage der Freifunk-Knoten auf den Anzeigesäulen der HEAG mobilo
 \end{minipage}
 % Auffüllen des Zwischenraums
 \hfill
+\pause
 % minipage mit Grafik
 \begin{minipage}{0.4\textwidth}
 \includegraphics[width=0.8\textwidth]{images/unifi-ap-ac-outdoor.jpg}
@@ -244,10 +248,10 @@ Annahme: Montage der Freifunk-Knoten auf den Anzeigesäulen der HEAG mobilo
 \centeredimage{images/plan_luisenplatz2.jpg}
 \end{frame}
 
-\begin{frame}{Konzept: Luisenplatz}
-\framesubtitle{prognostizierte Ausleuchtung}
-\includegraphics[height=0.75\textheight]{images/plan_luisenplatz3.jpg}
-\end{frame}
+%\begin{frame}{Konzept: Luisenplatz}
+%\framesubtitle{prognostizierte Ausleuchtung}
+%\includegraphics[height=0.75\textheight]{images/plan_luisenplatz3.jpg}
+%\end{frame}
 
 \begin{frame}{Konzept: Luisenplatz}
 \framesubtitle{Anforderungen an die Stadt}
@@ -257,29 +261,29 @@ Annahme: Montage der Freifunk-Knoten auf den Anzeigesäulen der HEAG mobilo
 \vfill
 \end{center}
 \begin{itemize}
-\item Bereitstellung von Standorten/Montageflächen
-\item Bereitstellung von Strom und Internetanbindung (alternativ Anbindung über Richtfunk)
-\item Erwerb oder Sponsoring der notwendigen Hardware
+\item Bereitstellung von Standorten/Montageflächen \pause
+\item Bereitstellung von Strom und Internetanbindung (alternativ Anbindung über Richtfunk) \pause
+\item Erwerb oder Sponsoring der notwendigen Hardware \pause
 \item Durchführung fachgerechter Montagearbeiten (standortabhängig)
 \end{itemize}
 \vfill
 \end{frame}
 
 \begin{frame}{Konzept: Luisenplatz}
-\framesubtitle{Grobkalkulation}
-Anschaffungskosten:
+\framesubtitle{Grobkalkulation} \pause
+Anschaffungskosten: \pause
 \begin{itemize}
-	\item 4x UniFi AP AC Outdoor (390\euro{} inkl. MwSt.) = 1560\euro{}
-	\item Controller-Hardware ($\sim$ 1000\euro{})
-	\item notwendige Montagearbeiten und Abnahme
+	\item 4x UniFi AP AC Outdoor (390\euro{} inkl. MwSt.) = 1560\euro{} \pause
+	\item Controller-Hardware ($\sim$ 1000\euro{}) \pause
+	\item notwendige Montagearbeiten und Abnahme \pause
 \end{itemize}
-\vfill
-Laufende Kosten:
+\vfill \pause
+Laufende Kosten: \pause
 \begin{itemize}
 	\item Stromkosten Router (Herstellerangabe Maximalverbrauch 22W):\newline
-	192kWh/Jahr je Gerät $\rightarrow$ max. 768kWh/Jahr
+	192kWh/Jahr je Gerät $\rightarrow$ max. 768kWh/Jahr \pause
 	\item Stromkosten Controller-Hardware \newline
-	($\sim$150W) $\rightarrow$ 1314 kWh/Jahr
+	($\sim$150W) $\rightarrow$ 1314 kWh/Jahr \pause
 	\item Beitrag zur Finanzierung der Backbone-Infrastruktur: \newline
 	2000 \euro{} / Jahr
 \end{itemize}
@@ -289,10 +293,10 @@ Laufende Kosten:
 \section{Kooperationen in anderen Städten}
 \begin{frame}{Kooperationen in anderen Städten}
 \begin{itemize}
-\item Berlin und Lübeck, Weimar: Zugang zu den Dächern öffentlicher Gebäude zum Aufbau eines Richtfunknetzes \newline $\rightarrow$ unabhängige Infrastruktur in Bürgerhand
-\item Medienanstalt Berlin-Brandenburg: Förderung im Rahmen der WLAN-Initiative PUBLIC WIFI, Broschüre
-\item Arnsberg: Förderung durch Verkehrsverein, Sponsor: regionale Sparkasse
-\item Rothenburg: Kontakt zu lokalen Geschäften, Bereitstellung vorkonfigurierter Router durch Rothenburger Stadtmarketing
+\item Berlin und Lübeck, Weimar: Zugang zu den Dächern öffentlicher Gebäude zum Aufbau eines Richtfunknetzes \newline $\rightarrow$ unabhängige Infrastruktur in Bürgerhand \pause
+\item Medienanstalt Berlin-Brandenburg: Förderung im Rahmen der WLAN-Initiative PUBLIC WIFI, Broschüre \pause
+\item Arnsberg: Förderung durch Verkehrsverein, Sponsor: regionale Sparkasse \pause
+\item Rothenburg: Kontakt zu lokalen Geschäften, Bereitstellung vorkonfigurierter Router durch Rothenburger Stadtmarketing \pause
 \end{itemize}
 \end{frame}
 
@@ -300,14 +304,14 @@ Laufende Kosten:
 \section{Weitere mögliche Schritte}
 \begin{frame}{Weitere mögliche Schritte in Darmstadt}
 \begin{itemize}
-\item Bereitstellen von lokaler Dienste im Freifunk-Netz (Bürgerinformationen, Aktuelles aus Darmstadt und Umgebung, \ldots)
-\item Versorgung weiterer Standorte mit freiem Netzzugang
+\item Bereitstellen von lokaler Dienste im Freifunk-Netz (Bürgerinformationen, Aktuelles aus Darmstadt und Umgebung, \ldots) \pause
+\item Versorgung weiterer Standorte mit freiem Netzzugang \pause
 \begin{itemize}
-	\item öffentliche Plätze und Gebäude
-	\item Parkanlagen
-	\item Einkaufspassagen (Darmstädter Citymarketing)
+	\item öffentliche Plätze und Gebäude \pause
+	\item Parkanlagen \pause
+	\item Einkaufspassagen (Darmstädter Citymarketing) \pause
 \end{itemize}
-\item Aufbauen von Richtfunkstrecken über größere Distanz (von höheren Standorten aus)
+\item Aufbauen von Richtfunkstrecken über größere Distanz (von höheren Standorten aus) \pause
 \begin{itemize}
 	\item Langer Lui
 	\item Hochzeitsturm
