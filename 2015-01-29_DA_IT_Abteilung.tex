@@ -28,11 +28,22 @@
 \includegraphics[height=1cm]{images/logo}
 \end{textblock*}}
 
-\begin{frame}{Outline}
+\begin{frame}{Themen}
 \tableofcontents
 \end{frame}
 
-\section{Einleitung}
+\section{Was ist Freifunk?}
+\begin{frame}{Was ist Freifunk?}
+\begin{itemize}
+	\item Teil einer weltweiten Bewegung zur Etablierung von offenen und freiem Netzzugang
+	\item Neben der Bereitstellung eines Internetzugangs auch Plattform für lokale Dienste
+	\item dezentral und gemeinschaftlich von Bürgern, Vereinen, Unternehmern und Institutionen betrieben
+	\item robuste Netzwerktopologie durch Verwendung von Mesh-Netzwerken und dezentralen Routingalgorithmen
+	\item Freifunk Darmstadt: Initiative des Chaos Darmstadt e.V.
+\end{itemize}
+\end{frame}
+
+
 \begin{frame}{Freifunk in Deutschland}
 \vfill
 \begin{center}
@@ -50,7 +61,7 @@
 \end{center}
 \vfill
 \end{frame}
-vfill
+
 \section{Aktueller Stand}
 \begin{frame}{Aktueller Stand}
 \vfill
@@ -122,38 +133,17 @@ Außeneinsatz:
 \vfill
 \end{frame}
 
-\section{Beispiel Luisenplatz}
 \begin{frame}{Beispiel: Luisenplatz}
-\begin{center}
-\includegraphics[height=0.7\textheight]{images/map_luisenplatz_1}
-\end{center}
+\includegraphics[height=0.75\textheight]{images/map_luisenplatz_1.jpg}$\;$
 \end{frame}
 
 \begin{frame}{Beispiel: Luisenplatz}
-\begin{center}
-\includegraphics[height=0.7\textheight]{images/map_luisenplatz_2}
-\end{center}
+\includegraphics[height=0.75\textheight]{images/map_luisenplatz_2.jpg}$\;$
 \end{frame}
 
 \begin{frame}{Beispiel: Luisenplatz}
-\begin{center}
-\includegraphics[height=0.7\textheight]{images/map_luisenplatz_3}
-\end{center}
+\includegraphics[height=0.75\textheight]{images/map_luisenplatz_3.jpg}$\;$
 \end{frame}
-
-\begin{frame}{Beispiel: Luisenplatz}
-\vfill
-\begin{itemize}
-\item Standorte: ÖPNV Fahrplananzeige
-\item Stromversorgung und Internetanbindung an allen Knoten
-\item 4 $\times$ UniFi AP AC Outdoor (802.11ac, je 380-400\euro{})
-	\begin{itemize}
-	\item ca. 4 $\times$ 190kWh/Jahr
-	\end{itemize}
-\end{itemize}
-\vfill
-\end{frame}
-
 
 \section{Anforderungen an die Stadt}
 \begin{frame}{Anforderungen an die Stadt}
@@ -214,7 +204,7 @@ Zeit bis zum Failover bei Ausfall einer Internetanbindung: max. 60s
 	\end{itemize}
 \end{itemize}
 \vfill
-Ausrollen neuer Firmware-Releases binnen 24 Stunden
+Ausrollen neuer Firmware-Releases binnen 24 Stunden (bei SSH-Zugang auf die Knoten on-demand) 
 \vfill
 \end{frame}
 	
