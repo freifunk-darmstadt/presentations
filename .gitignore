@@ -5,3 +5,5 @@
 *.out
 *.snm
 *.toc
+
+*-converted-to.pdf
