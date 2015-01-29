@@ -60,6 +60,8 @@
 \includegraphics[height=0.6\textheight]{images/ffmap_moehne}
 \end{frame}
 
+
+\section{Freifunk Darmstadt}
 \begin{frame}{Freifunk Darmstadt}
 \framesubtitle{Knotenkarte}
 \centeredimage[aktuell $\sim$ 80 Knoten in Betrieb]{images/ffmap_darmstadt}
@@ -75,7 +77,17 @@
 \centeredimage{images/ffmap_darmstadt_k6}
 \end{frame}
 
+\begin{frame}{Freifunk Darmstadt}
+\framesubtitle{Aufgabenbereich}
+\begin{itemize}
+\item Regelmäßige Informationsveranstaltungen und Workshops
+\item Support bei unseren Treffen oder Online
+\item Öffentlichkeitsarbeit
+\end{itemize}
+\end{frame}
 
+
+\section{Architektur}
 \begin{frame}{Architektur}
 \framesubtitle{Freifunk-Knoten}
 \begin{itemize}
@@ -105,47 +117,51 @@
 \centeredimage{images/network_layout}
 \end{frame}
 
-\section{Aktueller Stand}
-\begin{frame}{Aktueller Stand}
+\begin{frame}{Architektur}
+\framesubtitle{Netzaufbau}
 \begin{itemize}
-	\item $\sim$ 80 Freifunk-Router (Knoten) in Betrieb
-	\item 4 Gateways
+	\item Knoten
+	\begin{itemize}
+		\item verbinden sich zum Freifunk-Netz\newline
+		$\rightarrow$ über VPN oder Mesh mit sichtbaren benachbarten Knoten
+		\item stellen WLAN für Clients zur Verfügung
+	\end{itemize}
+	\item Gateways
+	\begin{itemize}
+		\item dienen als Backbone zur Anbindung der Knoten
+		\item stellen Basisdienste (DHCP, RA, DNS, NTP) zur Verfügung
+		\item routen Traffic ins Internet (Uplink, meist über VPN-Tunnel von Drittanbietern)
+	\end{itemize}
+	\item zusätzliche Dienste
+	\begin{itemize}
+		\item Update-Server
+		\item Sammlung von Metriken
+		\item Monitoring
+		\item \ldots
+	\end{itemize}
 \end{itemize}
 \end{frame}
 
-
-
-\section{Projektbeschreibung}
-\begin{frame}{Projektbeschreibung}
+\begin{frame}{Architektur}
+\framesubtitle{Ausfallsicherheit}
+\vfill
+\begin{itemize}
+	\item mehrere Gateways zur Verbindung ins Freifunk-Netz (neben Mesh-Funktionalität)
+	\item redundante Internetversorgung durch die Uplink-Gateways
+	\item kontinuierliches Monitoring aller kritischen Systeme
+\end{itemize}
 \begin{center}
-TODO
-%\includegraphics[height=0.7\textheight]{images/meshing}
+\includegraphics[width=\textwidth]{images/ffmap_graph}
 \end{center}
-\end{frame}
-
-
-
-
-\section{Ausbauplan}
-\begin{frame}{Ausbauplan}
 \vfill
-\begin{itemize}
-	\item öffentliche Plätze, Staatstheater, Haltestellen, Krankenhäuser
-	\item Hotels, Gaststätten, öffentliche Einrichtungen
-	\item Parks (z.B. Herrengarten, Prinz-Emil-Garten)
-	\item private Wohnungen, Studentenwohnheime
-	\item hochgelegene Plätze für Richtfunk (z.B. Langer Ludwig, Kirchtürme, Hochzeitsturm, h$\_$da Hochhaus)
-\end{itemize}
-\vfill
-\pause
-\begin{itemize}
-	\item Durchführung von Informationsveranstaltungen und Workshops über Freifunk und den sicheren Umgang damit
-\end{itemize}
+\small{Zeit bis zum automatischen Failover bei Ausfall eines Uplinks: max. 60s}
 \vfill
 \end{frame}
 
-\section{Verwendete Router-Hardware}
-\begin{frame}{Verwendete Router-Hardware}
+
+
+\section{Hardware}
+\begin{frame}{Verwendete Hardware}
 Handelsübliche Modelle im 2.4GHz- und 5GHz-Band
 \vfill
 Für den Heimbedarf oder kleinere öffentliche Bereiche:
@@ -157,33 +173,83 @@ Für den Heimbedarf oder kleinere öffentliche Bereiche:
 
 Größere Inneninstallationen:
 \begin{itemize}
-\item bis zu 100 Clients pro Gerät und Frequenzband
-\item ca. 250\euro{}
+\item bis zu 200 Clients pro Gerät
+\item 100-250\euro{}
 \end{itemize}
 \vfill
 
-Außeneinsatz:
+Größerer Außeneinsatz:
 \begin{itemize}
-\item bis zu 100 Clients pro Gerät und Frequenzband
-\item Kosten abhängig von Frequenzband, Geschwindigkeit und Antennentyp, 100-600\euro{}
+\item bis zu 200 Clients pro Gerät
+\item Kosten abhängig von verwendeten Frequenzbändern, Bandbreite und Antennentyp, 100-600\euro{}
 \end{itemize}
 \vfill
 \end{frame}
 
-\begin{frame}{Beispiel: Luisenplatz}
-\includegraphics[height=0.75\textheight]{images/plan_luisenplatz1.jpg}$\;$
+
+
+
+\section{Standorte}
+\begin{frame}{Standorte}
+Freifunk bietet für viele Anwendungsfelder eine kosteneffiziente Möglichkeit, freien Netzzugang anzubieten:\newline
+\begin{itemize}
+	\item öffentliche Plätze, Staatstheater, Haltestellen, Krankenhäuser
+	\item Hotels, Gaststätten, öffentliche Einrichtungen
+	\item Parks (z.B. Herrengarten, Prinz-Emil-Garten)
+	\item private Wohnungen, Studentenwohnheime
+	\item hochgelegene Plätze für Richtfunk (z.B. Langer Ludwig, Kirchtürme, Hochzeitsturm, h$\_$da Hochhaus)
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Beispiel: Luisenplatz}
-\includegraphics[height=0.75\textheight]{images/plan_luisenplatz2.jpg}$\;$
+
+
+\section{Konzept: Luisenplatz}
+\begin{frame}{Konzept: Luisenplatz}
+\framesubtitle{Vogelperspektive}
+\centeredimage{images/plan_luisenplatz1.jpg}
 \end{frame}
 
-\begin{frame}{Beispiel: Luisenplatz}
-\includegraphics[height=0.75\textheight]{images/plan_luisenplatz3.jpg}$\;$
+\begin{frame}{Konzept: Luisenplatz}
+\framesubtitle{Hardwarevorschlag}
+Annahme: Montage der Freifunk-Knoten auf den Anzeigesäulen der HEAG mobilo
+
+
+\begin{minipage}{0.4\textwidth} 
+\begin{itemize}
+	\item UniFi AP AC Outdoor
+	\item Abmessungen: 200x204x27mm
+	\item Gewicht: 600g
+	\item Stromverbrauch: maximal 22W
+	\item Dualband, 802.11ac
+	\item Reichweite: 183m
+	\item 3x3 MIMO
+\end{itemize}
+% \caption{Der Text}
+% \label{Text}
+\end{minipage}
+% Auffüllen des Zwischenraums
+\hfill
+% minipage mit Grafik
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=0.8\textwidth]{images/unifi-ap-ac-outdoor.jpg}
+\end{minipage}
+
+
+
+\end{frame}
+\begin{frame}{Konzept: Luisenplatz}
+\framesubtitle{Positionierung der Knoten}
+
+\centeredimage{images/plan_luisenplatz2.jpg}
 \end{frame}
 
-\section{Anforderungen an die Stadt}
-\begin{frame}{Anforderungen an die Stadt}
+\begin{frame}{Konzept: Luisenplatz}
+\framesubtitle{prognostizierte Ausleuchtung}
+\includegraphics[height=0.75\textheight]{images/plan_luisenplatz3.jpg}
+\end{frame}
+
+\begin{frame}{Konzept: Luisenplatz}
+\framesubtitle{Anforderungen an die Stadt}
 \vfill
 \begin{center}
 \includegraphics[height=0.4\textheight]{../global/images/freifunk_setup}$\;$
@@ -191,55 +257,30 @@ Außeneinsatz:
 \end{center}
 \begin{itemize}
 \item Bereitstellung von Standorten/Montageflächen
-\item Bereitstellung von Strom und Internetanbindung/Richtfunk
+\item Bereitstellung von Strom und Internetanbindung (alternativ Anbindung über Richtfunk)
 \item Erwerb oder Sponsoring der notwendigen Hardware
-\item standortabhängig Durchführung fachgerechter Montagearbeiten
+\item Durchführung fachgerechter Montagearbeiten (standortabhängig)
 \end{itemize}
 \vfill
 \end{frame}
 
-\section{Organisation}
-\begin{frame}{Organisation}
-\vfill
+\begin{frame}{Konzept: Luisenplatz}
+\framesubtitle{Grobkalkulation}
+Anschaffungskosten:
 \begin{itemize}
-\item das Freifunk-Kernteam ist zuständig für
-	\begin{itemize}
-	\item Netzwerkinfrastruktur
-	\item Firmwareaktualisierung
-	\item Communitymanagement
-	\item Support
-	\end{itemize}
-\vfill
-\item die Freifunk-Community besitzt die Knoten und ist für deren Betrieb verantwortlich
+	\item 4x UniFi AP AC Outdoor (390\euro{} inkl. MwSt.) = 1560\euro{}
+	\item Controller-Hardware ($\sim$ 1000\euro{})
+	\item notwendige Montagearbeiten und Abnahme
 \end{itemize}
 \vfill
-\end{frame}
-
-\begin{frame}{Organisation - Infrastruktur}
-\vfill
+Laufende Kosten:
 \begin{itemize}
-	\item Multiple VPN-Endpunkte
-	\item Redundante Internetanbindung
-	\item kontinuierliches Monitoring aller kritischen Systeme
+	\item Stromkosten (Herstellerangabe Maximalverbrauch 22W):\newline
+	192kWh/Jahr je Gerät $\rightarrow$ max. 768kWh/Jahr
+	\item Beitrag zur Finanzierung der Backbone-Infrastruktur: \newline
+	2000 \euro{} / Jahr
 \end{itemize}
-\begin{center}
-\includegraphics[width=\textwidth]{images/ffmap_graph}
-\end{center}
-\vfill
-Zeit bis zum Failover bei Ausfall einer Internetanbindung: max. 60s
-\vfill
 \end{frame}
 
-
-	
-\begin{frame}{Organisation - Communitymanagement}
-\vfill
-\begin{itemize}
-\item Regelmäßige Informationsveranstaltungen
-\item Support bei unseren Treffen und Online
-\item Öffentlichkeitsarbeit
-\end{itemize}
-\vfill
-\end{frame}
 
 \end{document}
