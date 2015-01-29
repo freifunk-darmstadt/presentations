@@ -4,7 +4,17 @@
 \usecolortheme{dove}
 \usepackage{textpos}
 \usepackage{grid-system}
+\usepackage{svg}
 \usepackage[official]{eurosym}
+
+
+\newcommand{\centeredimage}[2][ ]{
+        \begin{center}
+            \includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{#2} $\;$
+
+            \tiny{#1}
+        \end{center}
+}
 
 
 % po4a: environment frame
@@ -50,25 +60,19 @@
 \includegraphics[height=0.6\textheight]{images/ffmap_moehne}
 \end{frame}
 
-\begin{frame}{Was ist Freifunk?}
-\framesubtitle{Knoten in Darmstadt (Gesamtnetz)}
-\begin{center}
-\includegraphics[height=0.75\textheight]{images/ffmap_darmstadt} \newline
-\end{center}
+\begin{frame}{Freifunk Darmstadt}
+\framesubtitle{Knotenkarte}
+\centeredimage[aktuell $\sim$ 80 Knoten in Betrieb]{images/ffmap_darmstadt}
 \end{frame}
 
-\begin{frame}{Was ist Freifunk?}
-\framesubtitle{Knoten in Darmstadt (City)}
-\begin{center}
-\includegraphics[height=0.75\textheight]{images/ffmap_darmstadt_city} \newline
-\end{center}
+\begin{frame}{Freifunk Darmstadt}
+\framesubtitle{Knotenkarte Darmstadt (City)}
+\centeredimage{images/ffmap_darmstadt_city}
 \end{frame}
 
-\begin{frame}{Was ist Freifunk?}
-\framesubtitle{Knoten in Darmstadt (K6)}
-\begin{center}
-\includegraphics[height=0.75\textheight]{images/ffmap_k6}
-\end{center}
+\begin{frame}{Freifunk Darmstadt}
+\framesubtitle{Knotenkarte Darmstadt (K6)}
+\centeredimage{images/ffmap_darmstadt_k6}
 \end{frame}
 
 
@@ -93,6 +97,12 @@
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Architektur}
+\framesubtitle{Netzaufbau}
+\centeredimage{images/network_layout}
 \end{frame}
 
 \section{Aktueller Stand}
