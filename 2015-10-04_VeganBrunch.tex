@@ -13,6 +13,13 @@
 % po4a: environment Row
 % po4a: environment Cell
 
+\AtBeginSection[] % Do nothing for \section*
+{
+	\begin{frame}<beamer>
+		\frametitle{Übersicht}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
 
 \title{\centering\includegraphics[width=\textwidth]{images/logo-skyline}}
 \author{}
@@ -21,16 +28,17 @@
 
 \begin{document}
 
+
 \begin{frame}
 \maketitle
 \end{frame}
 
 \addtobeamertemplate{frametitle}{}{%
-\begin{textblock*}{100mm}(0.93\textwidth,-0.5cm)
+\begin{textblock*}{100mm}(0.92\textwidth,-0.5cm)
 \includegraphics[height=1cm]{images/logo}
 \end{textblock*}}
 
-\begin{frame}{Outline}
+\begin{frame}{Übersicht}
 \tableofcontents
 \end{frame}
 
