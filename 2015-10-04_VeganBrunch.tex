@@ -1,4 +1,4 @@
-\documentclass[10pt,handout]{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usetheme{default}
 \usecolortheme{dove}
@@ -172,14 +172,13 @@
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{images/netneutrality}
 	\end{center}
+	Alle Daten werden gleichberechtigt übertragen:
 	\begin{itemize}[<+->]
-		\item alle Daten werden gleichberechtigt übertragen
-		\begin{itemize}[<+->]
-			\item keine Filterung der Inhalte
-			\item keine Zensur
-			\item keine Priorisierung
-		\end{itemize}
+		\item keine Filterung der Inhalte
+		\item keine Zensur
+		\item keine Priorisierung
 	\end{itemize}
+
 	% Bilder dezentrales mesh, zustimmung
 \end{frame}
 
@@ -209,6 +208,95 @@
 	\end{itemize}
 \end{frame}
 
+\section{Wie funktioniert Freifunk?}
+
+\begin{frame}{Ohne Freifunk}
+	\begin{center}
+		\includegraphics[height=6cm]{images/network_1} \\
+		\vfill
+		Viele geschlossene (WLAN-)Netze, die nicht miteinander kommunizieren
+	\end{center}
+\end{frame}
+
+\begin{frame}{Mit Freifunk}
+	\begin{center}
+		\includegraphics[height=6cm]{images/network_2} \\
+		\vfill
+		Freifunkknoten bauen ein lokales Netz auf
+	\end{center}
+\end{frame}
+
+\begin{frame}{Verminderung der digitalen Kluft}
+	\begin{center}
+		\includegraphics[height=6cm]{images/network_3} \\
+		\vfill
+		Das Freifunknetz kann mit neuen Knoten erweitert werden,\\ auch wo es kein Internet gibt
+	\end{center}
+\end{frame}
+
+\begin{frame}{Das Heimnetz bleibt privat}
+	\begin{center}
+		\includegraphics[height=6cm]{images/network_4} \\
+		\vfill
+		eigenes Datenverkehr und Freifunk-Datenverkehr sind getrennt
+	\end{center}
+	
+\end{frame}
+
+
+\begin{frame}{Zugang zum Internet}
+	\begin{center}
+		\includegraphics[height=6cm]{images/network_5} \\
+		\vfill
+		Freifunkdatenverkehr wird erst durch unsere Gateways\\ ins Internet weitergeleitet
+	\end{center}
+\end{frame}
+
+\section{Rechtliche Aspekte und Risiken}
+
+\begin{frame}{Internet teilen vs. Störerhaftung}
+	
+	\begin{columns}[c]
+		\begin{column}{4cm}
+			\includegraphics[width=\textwidth]{images/recht}
+		\end{column}
+		\begin{column}{8cm}
+	\begin{itemize}
+		\item Teilen des eigenen Internetanschlusses ist in Deutschland legal
+		\pause\item \textbf{aber:} Mithaftung für illegale Aktivitäten, wenn Täter nicht zu ermitteln ist
+		\pause\item Abmahnkosten sind zu tragen
+	\end{itemize}
+	
+	\bigskip
+	\pause
+	
+	Unsere Lösungen:
+	\begin{itemize}
+		\item VPN in Länder ohne Störerhaftung
+		\item selbst Internetanbieter werden
+	\end{itemize}
+		\end{column}
+	\end{columns}
+	
+	\vfill
+	\centering
+	\pause \textbf{Fazit:}\\Störerhaftung existiert noch, wir machen es aber sehr schwer,\\den eigentlichen Anschlussinhaber zu finden.
+
+\end{frame}
+
+\begin{frame}{Sicherheit im Freifunk-Netz}
+	\begin{itemize}[<+->]
+		\item Freifunk als freies Netz bietet keinen Schutz
+		\item WLAN ist nicht verschlüsselt, vertrauliche Daten nur mit Ende-zu-Ende-Verschlüsselung (z.B. https) übertragen
+		\vfill
+		\item Daten im Freifunk-Netz: Gesamter Verkehr schwer zu überwachen
+		\pause\item Daten ins Internet: Betreiber der Gateways können überwachen
+		\vfill
+	\end{itemize}
+	\centering
+	\textbf{Fazit:}\\Zentrale Überwachung und Zensur deutlich schwieriger als im Internet, \\
+	Benutzer sind selbst verantwortlich für Schutz und Verschlüsselung.
+\end{frame}
 
 \section{Freifunk in Darmstadt}
 
@@ -234,7 +322,7 @@
 		\begin{center}
 			\includegraphics[width=0.7\textwidth]{images/2015-10-03_darmstadt-map}
 		\end{center}
-
+		
 		\vfill
 		\url{https://map.darmstadt.freifunk.net}
 		
@@ -306,122 +394,6 @@
 		\item außerdem online im IRC (\#ffda @ hackint.org)
 		\item andere Kontaktmöglichkeiten auf unserer Webseite
 	\end{itemize}
-\end{frame}
-
-\section{Wie funktioniert Freifunk?}
-
-\begin{frame}{Ohne Freifunk}
-	\begin{center}
-		\includegraphics[height=6cm]{images/network_1} \\
-		\vfill
-		Viele geschlossene (WLAN-)Netze, die nicht miteinander kommunizieren
-	\end{center}
-\end{frame}
-
-\begin{frame}{Mit Freifunk}
-	\begin{center}
-		\includegraphics[height=6cm]{images/network_2} \\
-		\vfill
-		Freifunkknoten bauen ein lokales Netz auf
-	\end{center}
-\end{frame}
-
-\begin{frame}{Verminderung der digitalen Kluft}
-	\begin{center}
-		\includegraphics[height=6cm]{images/network_3} \\
-		\vfill
-		Das Freifunknetz kann mit neuen Knoten erweitert werden,\\ auch wo es kein Internet gibt
-	\end{center}
-\end{frame}
-
-\begin{frame}{Das Heimnetz bleibt privat}
-	\begin{center}
-		\includegraphics[height=6cm]{images/network_4} \\
-		\vfill
-		eigenes Datenverkehr und Freifunk-Datenverkehr sind getrennt
-	\end{center}
-	
-\end{frame}
-
-
-\begin{frame}{Zugang zum Internet}
-	\begin{center}
-		\includegraphics[height=6cm]{images/network_5} \\
-		\vfill
-		Freifunkdatenverkehr wird erst durch unsere Gateways\\ ins Internet weitergeleitet
-	\end{center}
-\end{frame}
-
-\section{Rechtliche Aspekte und Risiken}
-\begin{frame}{Rechtliche Aspekte und Risiken}
-\begin{Row}
-\begin{Cell}{1}
-\vspace{0.1cm}
-\includegraphics[width=3.7cm]{images/recht}
-\end{Cell}
-\begin{Cell}{2}
-\vspace{1cm}
-Überblick:
-\begin{itemize}[<+->]
-\item Internet teilen vs. Störerhaftung
-\item Sicherheit im Freifunk-Netz
-\item was Freifunk (noch) nicht bietet
-\end{itemize}
-\end{Cell}
-\end{Row}
-\end{frame}
-
-\begin{frame}{Internet teilen vs. Störerhaftung}
-	\begin{itemize}
-		\item Teilen des eigenen Internetanschlusses ist in Deutschland legal
-		\pause\item \textbf{aber:} Mithaftung für illegale Aktivitäten, wenn Täter nicht zu ermitteln ist
-		\pause\item Abmahnkosten sind zu tragen
-	\end{itemize}
-	
-	\vfill
-	\pause
-	
-	Unsere Lösungen:
-	\begin{itemize}
-		\item VPN in Länder ohne Störerhaftung
-		\item selbst Internetanbieter werden
-	\end{itemize}
-	
-	\vfill
-	\centering
-	\pause \textbf{Fazit:}\\Störerhaftung existiert noch, wir machen es aber sehr schwer,\\den eigentlichen Anschlussinhaber zu finden.
-
-\end{frame}
-
-\begin{frame}{Sicherheit im Freifunk-Netz}
-	\begin{itemize}
-		\pause\item Freifunk als freies Netz hat wenige Einschränkungen
-		\pause\item Menschen können darin auch böse Dinge tun
-		\vfill
-		\pause\item Daten im Freifunk-Netz: Gesamter Verkehr schwer zu überwachen, aber nicht verschlüsselt
-		\pause\item Daten ins Internet: Betreiber der Gateways können überwachen
-		\vfill
-		\pause\item \textbf{Achtung:} WLAN ist nicht verschlüsselt, vertrauliche Daten nur mit Ende-zu-Ende-Verschlüsselung (z.B. https) übertragen
-		\vfill
-	\end{itemize}
-	\centering
-	\textbf{Fazit:}\\Zentrale Überwachung und Zensur deutlich schwieriger \\ als im Internet
-\end{frame}
-
-
-\begin{frame}{Was Freifunk (noch) nicht bietet}
-\vfill
-\begin{itemize}
-\pause\item Schutz vor Trojanern, Phishing und anderen Gefahren des freien Datenverkehrs
-\begin{itemize}
-\pause\item[$\rightarrow$] wird es nicht geben, sonst ist es kein freier Datenverkehr mehr
-\end{itemize}
-\vfill
-\pause\item Verschlüsselung gibt es nicht auf allen Teilen der Infrastruktur
-\vfill
-\pause\item Experimente mit verschlüsseltem Meshing und WLAN AP
-\end{itemize}
-\vfill
 \end{frame}
 
 \begin{frame}{Q~\&~A}
