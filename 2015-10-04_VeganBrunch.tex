@@ -234,8 +234,10 @@
 			\item Bewohner
 			\item NGOs, Vereine, Schulen, \ldots
 			\item Cafés, Hotels, Geschäfte, \ldots
-		\end{itemize}	
+		\end{itemize}
+		\vfill
 		\item Vorträge und Workshops organisieren
+		\vfill
 		\item Sponsoren finden für Technik und öffentliche APs
 	\end{itemize}
 \end{frame}
@@ -277,6 +279,7 @@
 \begin{frame}{Ohne Freifunk}
 	\begin{center}
 		\includegraphics[height=6cm]{images/network_1} \\
+		\vfill
 		Viele geschlossene (WLAN-)Netze, die nicht miteinander kommunizieren
 	\end{center}
 \end{frame}
@@ -284,6 +287,7 @@
 \begin{frame}{Mit Freifunk}
 	\begin{center}
 		\includegraphics[height=6cm]{images/network_2} \\
+		\vfill
 		Freifunkknoten bauen ein lokales Netz auf
 	\end{center}
 \end{frame}
@@ -291,6 +295,7 @@
 \begin{frame}{Verminderung der digitalen Kluft}
 	\begin{center}
 		\includegraphics[height=6cm]{images/network_3} \\
+		\vfill
 		Das Freifunknetz kann mit neuen Knoten erweitert werden,\\ auch wo es kein Internet gibt
 	\end{center}
 \end{frame}
@@ -298,6 +303,7 @@
 \begin{frame}{Das Heimnetz bleibt privat}
 	\begin{center}
 		\includegraphics[height=6cm]{images/network_4} \\
+		\vfill
 		eigenes Datenverkehr und Freifunk-Datenverkehr sind getrennt
 	\end{center}
 	
@@ -307,6 +313,7 @@
 \begin{frame}{Zugang zum Internet}
 	\begin{center}
 		\includegraphics[height=6cm]{images/network_5} \\
+		\vfill
 		Freifunkdatenverkehr wird erst durch unsere Gateways\\ ins Internet weitergeleitet
 	\end{center}
 \end{frame}
@@ -322,7 +329,7 @@
 \vspace{1cm}
 Überblick:
 \begin{itemize}[<+->]
-\item Störerhaftung
+\item Internet teilen vs. Störerhaftung
 \item Sicherheit im Freifunk-Netz
 \item was Freifunk (noch) nicht bietet
 \end{itemize}
@@ -330,36 +337,41 @@
 \end{Row}
 \end{frame}
 
-\begin{frame}{Störerhaftung}
-\begin{itemize}
-\pause\item Teilen des eigenen Internetanschlusses ist in Deutschland legal
-\begin{itemize}
-	\pause\item \textbf{aber:} Mithaftung für illegale Aktivitäten, wenn Täter nicht zu ermitteln ist
-\end{itemize}
-\pause\item Abmahnkosten sind zu tragen
-\vfill
-\pause\item aktuelle Lösung: VPN in Länder ohne Störerhaftung
-\pause\item Zukunft: selbst Internetanbieter werden
-\end{itemize}
-\vfill
-\centering
-\pause \textbf{Fazit:}\\Störerhaftung existiert noch, wir machen es aber sehr schwer,\\den eigentlichen Anschlussinhaber zu finden.
+\begin{frame}{Internet teilen vs. Störerhaftung}
+	\begin{itemize}
+		\item Teilen des eigenen Internetanschlusses ist in Deutschland legal
+		\pause\item \textbf{aber:} Mithaftung für illegale Aktivitäten, wenn Täter nicht zu ermitteln ist
+		\pause\item Abmahnkosten sind zu tragen
+	\end{itemize}
+	
+	\vfill
+	\pause
+	
+	Unsere Lösungen:
+	\begin{itemize}
+		\item VPN in Länder ohne Störerhaftung
+		\item selbst Internetanbieter werden
+	\end{itemize}
+	
+	\vfill
+	\centering
+	\pause \textbf{Fazit:}\\Störerhaftung existiert noch, wir machen es aber sehr schwer,\\den eigentlichen Anschlussinhaber zu finden.
 
 \end{frame}
 
 \begin{frame}{Sicherheit im Freifunk-Netz}
-\begin{itemize}
-	\pause\item Freifunk als freies Netz hat wenige Einschränkungen
-	\pause\item Menschen können darin auch böse Dinge tun
-	\vfill
-	\pause\item Daten im Freifunk-Netz: Gesamter Verkehr schwer zu überwachen, aber nicht verschlüsselt
-	\pause\item Daten ins Internet: Betreiber der Gateways können überwachen
-	\vfill
-\pause\item \textbf{Achtung:} WLAN ist nicht verschlüsselt, vertrauliche Daten nur mit Ende-zu-Ende-Verschlüsselung (z.B. https) übertragen
-\vfill
-\end{itemize}
-\centering
-\textbf{Fazit:}\\Zentrale Überwachung und Zensur deutlich schwieriger \\ als im Internet
+	\begin{itemize}
+		\pause\item Freifunk als freies Netz hat wenige Einschränkungen
+		\pause\item Menschen können darin auch böse Dinge tun
+		\vfill
+		\pause\item Daten im Freifunk-Netz: Gesamter Verkehr schwer zu überwachen, aber nicht verschlüsselt
+		\pause\item Daten ins Internet: Betreiber der Gateways können überwachen
+		\vfill
+		\pause\item \textbf{Achtung:} WLAN ist nicht verschlüsselt, vertrauliche Daten nur mit Ende-zu-Ende-Verschlüsselung (z.B. https) übertragen
+		\vfill
+	\end{itemize}
+	\centering
+	\textbf{Fazit:}\\Zentrale Überwachung und Zensur deutlich schwieriger \\ als im Internet
 \end{frame}
 
 
