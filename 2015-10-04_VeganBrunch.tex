@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[handout]{beamer}
 \usepackage[utf8]{inputenc}
 \usetheme{default}
 \usecolortheme{dove}
@@ -35,31 +35,136 @@
 \end{frame}
 
 \section{Was ist Freifunk?}
-\begin{frame}{Wie wäre es \ldots}
+\begin{frame}
+	\frametitle{Was ist Freifunk?}
+
+	Deutschlandweite Initiative für freie WLAN-Netze
+	
+	\pause
 	\vfill
+	\centering
+	\includegraphics[scale=0.3]{images/2015-10_freifunk-map} \\
+	über 200 lokale Gruppen\\bundesweit ca. 20.000 Accesspoints
+
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Wie sieht so ein freies Netz aus?}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{images/talk}
-		\vfill
-		\ldots wenn \textit{auch online} jeder mit jedem kommunizieren könnte,\\
-		\vfill
-		\textit{ohne eine Firma} bei der man sich \textit{anmelden müsste}? \\
+		\includegraphics[height=6cm]{images/2015-08-31_starkenburg}
 	\end{center}
-	\vfill
 \end{frame}
 
-\begin{frame}{Wie wäre es \ldots}
+\begin{frame}
+	\frametitle{Wie sieht so ein freies Netz aus?}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{images/up}
+		\includegraphics[height=6cm]{images/2015-10_partenheim-map}
+	\end{center}
+\end{frame}
 
-		\vfill
-		\begin{flushleft}\ldots wenn wir \textit{unsere eigenen}\end{flushleft}
-		\large Radiostationen, Filmkanäle, Telefoniedienste, Blogs, \ldots \normalsize
-		\begin{flushright}betreiben könnten,\end{flushright}
-		\vfill
-		ohne auf \textit{zentrale kommerzielle Anbieter} angewiesen zu sein?
-		\end{center}
+\begin{frame}{Was kann man damit tun?}
+	\vfill
+	\begin{center}
+		\includegraphics[width=5.5cm]{images/verbindet}
+	\end{center}
+	
+	\begin{itemize}[<+->]
+		\item jeder kann Services anbieten und nutzen
+		\begin{itemize}
+			\item Telefonieren und Chatten
+			\item dezentrales Social-Media (z.B Diaspora, Twister)
+			\item lizenzfreies Community-Radio
+			\item Austausch von Dateien und Medien
+			\item \ldots
+		\end{itemize}
+		\item gemeinsame Nutzung eines Internetanschlusses
+		\item Testbed f\"ur wissenschaftliche Experimente
+	\end{itemize}
 	\vfill
 \end{frame}
+
+\begin{frame}
+	\frametitle{Vision}
+	
+	Wie soll unsere Kommunikationsinfrastruktur aussehen?
+	
+	\begin{itemize}[<+->]
+		\item öffentlich
+		\item anonym zugänglich
+		\item nicht kommerziell
+		\item unzensiert
+		\item dezentral organisiert
+		\item im Besitz einer Gemeinschaft
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Vision: offen und öffentlich}
+	
+	\begin{itemize}[<+->]
+		\item Jeder darf Knoten betreiben und damit das Netz erweitern
+		\item Jeder darf das Netz und dessen Dienste nutzen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Vision: anonyme Zugänglichkeit}
+	
+	\begin{itemize}[<+->]
+		\item Weder Benutzer noch Betreiber müssen sich registrieren um teilzunehmen
+		\item Das bedeutet nicht, dass Freifunk Netze den Datenverkehr anonymisieren.
+			\begin{itemize}
+				\item Benutzer sind selbst für Ende-zu-Ende-Verschlüsselung und Anonymisierung ihres Datenverkehrs verantwortlich, sofern sie das wünschen.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Vision: Dezentralität}
+	
+	\begin{itemize}[<+->]
+		\item Kein Benutzer und keine Gruppe von Benutzern kontrolliert die Geräte anderer Benutzer und somit einen Teil des Netzes
+		\item Betreiber haben allerdings die Wahl einer Fernwartung ihrer Knoten zuzustimmen.
+		\item Eingriffe in die Knoten, z.B. Firmwareaktualisierungen oder Fernwartung, geschieht nur mit explizitem Einverständnis des jeweiligen Betreibers
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Vision: unkommerzieller Netzbetrieb}
+	
+	\begin{itemize}[<+->]
+		\item Das Netz ist kostenlos zugänglich.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Vision: Privatsphäre erhalten}
+	
+	\begin{itemize}[<+->]
+		\item Wir speichern weder Verbindungsdaten noch schneiden wir Datenverkehr mit
+		\item Wir speichern keine persönlichen Daten
+		\begin{itemize}
+			\item mit Ausnahme der von Betreibern explizit zum Betrieb des Netzes freiwillig bereitgestellten Daten wie Kontaktinformationen und geographischen Koordinaten
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ziele von Freifunk}
+	\begin{itemize}[<+->]
+		\item das Verständnis von Datennetzen und Netzwerktechnik sowie deren Auswirkungen auf die Gesellschaft zu fördern,
+		\item die breite Bevölkerung zu ermutigen, sich aktiv an der Forschung, Entwicklung und Bildung von freien (drahtlosen) Netzen zu beteiligen,
+		\item 	alle unsere Fachkenntnisse und Implementierungen öffentlich zugänglich zu machen und anderen zu ermöglichen, darauf auf zu bauen
+		\item und sich am politischen Prozess zu beteiligen Maßnahmen, um die rechtlichen Voraussetzungen für freie Netze zu schaffen.
+	\end{itemize}
+\end{frame}
+
+
+\section{Freifunk Darmstadt}
+
+
+%Radiostationen, Filmkanäle, Telefoniedienste, Blogs,
 
 %\begin{frame}{Warum Freifunk?}
 %\begin{center}\includegraphics[width=0.8\textwidth]{why}
@@ -71,113 +176,7 @@
 %\end{frame}
 
 
-\begin{frame}{Wie sollte die Infrastruktur für unsere tägliche Kommunikation sein?}
-\vfill
-\begin{itemize}
-\pause\item öffentlich
-\pause\item anonym zugänglich
-\pause\item nicht kommerziell
-\pause\item unzensiert
-\pause\item dezentral organisiert
-\pause\item im Besitz einer Gemeinschaft
-\end{itemize}
-\vfill
-\end{frame}
 
-
-\section{Wie funktioniert Freifunk?}
-\begin{frame}{Wie funktioniert Freifunk?}
-\vfill
-\centering
-\includegraphics[height=6cm]{images/meshing}
-
-Freifunk-Netze sind Netze aus WLAN-fähigen Geräten,\\ die sich untereinander verbinden,\\ ohne direkten Zugang zum Internet haben zu müssen.
-\vfill
-\end{frame}
-
-\begin{frame}{Was kann man damit tun?}
-\vfill
-\begin{center}
-\includegraphics[width=5.5cm]{images/verbindet}
-\end{center}
-
-\begin{itemize}
-\pause\item jeder kann Services anbieten und nutzen
-%\pause\item z.B. mit kleinen, sparsamen Computern wie Raspberry Pi
-\pause\item Telefonieren und Chatten
-\pause\item dezentrales Social-Media (z.B Diaspora)
-\pause\item lizenzfreies Community-Radio
-\pause\item Austausch von Dateien und Medien (share+like)
-\pause\item gemeinsame Nutzung eines Internetanschlusses
-\pause\item Testbed f\"ur wissenschaftliche Experimente, \ldots
-\end{itemize}
-\vfill
-\end{frame}
-
-\section{Beispiele}
-\begin{frame}{Wo gibt es schon Freifunk-Netze?}
-\vfill
-\centering
-\includegraphics[scale=0.5]{images/map}
-\vfill
-über 100 lokale Gruppen, bundesweit knapp 4000 Accesspoints
-\vfill
-\end{frame}
-
-\begin{frame}{Beispiel: Hamburg}
-\vfill
-\centering
-\includegraphics[scale=0.4]{images/hamburg-map}
-\vfill
-\end{frame}
-
-\begin{frame}{Beispiel: Hamburg}
-\vfill
-\centering
-\includegraphics[scale=0.22]{images/hamburg-graph}
-\vfill
-\end{frame}
-
-\begin{frame}{Beispiel: Mainz}
-\vfill
-\centering
-\includegraphics[scale=0.23]{images/mainz-nw}
-\vfill
-\end{frame}
-
-\begin{frame}{Beispiel: Mainz}
-\vfill
-\centering
-\includegraphics[width=\textwidth]{images/mainz}
-\vfill
-\end{frame}
-
-\section{Aktueller Stand}
-\begin{frame}{Darmstadt: Aktueller Stand}
-\vfill
-\centering
-\includegraphics[scale=0.25]{images/darmstadt-graph}
-\vfill
-\end{frame}
-
-\begin{frame}{Darmstadt: Aktueller Stand}
-\vfill
-\centering
-\includegraphics[height=0.85\textheight]{images/darmstadt-map}
-\vfill
-\end{frame}
-
-\section{Was wollen wir für Darmstadt?}
-\begin{frame}{Was wollen wir für Darmstadt?}
-\begin{center}
-\vfill
-\includegraphics[width=0.6\textwidth]{images/router}
-\end{center}
-
-\vfill
-Kurz und knapp: Unterstützer finden und viele Knoten verteilen!
-\vfill
-\end{frame}
 
 
 \begin{frame}{Was wollen wir für Darmstadt?}
