@@ -28,13 +28,15 @@
 	
 	\begin{frame}
 		\frametitle{Einleitung}
-		Freifunk:
+		\vfill
+		\textbf{Was ist Freifunk?}
+		\vfill
 		\begin{itemize}
 			\item nichtkommerzielle Initiative
 			\item Ziel: Aufbau und Betrieb eines freien WLAN-Meshnetzes
 			\item dezentrales Netz besteht aus den Routern vieler einzelner Betreiber
 			\item ca. 20.000 Freifunk-Router in Deutschland
-			\item OpenWrt basierte Firmware von lokalen Enthusiasten entwickelt
+			\item OpenWrt basierte Firmware von Enthusiasten in den Communities vor Ort entwickelt
 		\end{itemize}
 		\vfill
 		\pause
@@ -43,7 +45,7 @@
 	
 	\begin{frame}
 		\frametitle{Aufgabenstellung (1/2)}
-		    Konstruktion eines Testframeworks, das SOHO-Router mit einer Firmware flashed,
+		    Konstruktion eines Testframeworks, das SOHO-Router mit einer Firmware beschreibt,
 		    konfiguriert und anschließend testet.
 		    \vfill
 		    Hierzu wird die folgende Hardware bereitgestellt:
@@ -58,7 +60,7 @@
 	\begin{frame}
 		\frametitle{Aufgabenstellung (2/2)}
 		\vfill
-		Realisierung
+		Vorgaben zur Realisierung
 		\begin{itemize}
 			\item für Debian-basierte Linuxdistributionen (z.B. Raspbian)
 			\item mit Python 3 (>=3.3) nach gängigen Standards (z.B. PEP8)
@@ -73,6 +75,9 @@
 	
 	\begin{frame}
 		\frametitle{Setup}
+		    \vfill
+		    Für den Regelbetrieb ist ein Prüfstand mit folgendem Aufbau vorgesehen:
+		    \vfill
 			\begin{itemize}
 			    \item Bis zu 6 SOHO Router
 		    	\item LAN- und WAN-Port mit einem Managed Switch verbunden
@@ -85,54 +90,49 @@
 
 	\begin{frame}
 		\frametitle{Funktionsumfang (1/2)}
+		\vfill
+		Das Testframework soll unter anderem folgende Funktionen bieten:
+		\vfill
 		\begin{itemize}
 			\item Hardwareerkennung (Model, Revision, Primäre MAC-Addresse)
-			\item Ansteuerung der Steckerleiste
-			\item Weboberfläche zur Steuerung und Überwachung der Tests:
+			\item Kaltstart der Geräte
 			\item Tests für einzelne Geräte starten/stoppen
 			\item Auswahl und Flashen der zu testenden Firmware
 			\item Auszuführende Tests auswählen
-			\item Möglichkeit Tests abzubrechen
+			\item Abbruch einzelner Tests
 			\item Statusübersicht über laufende Tests
 			\item Ergebnisreport
-			\item Kaltstart der Geräte
-			\item Erkennung von Software-Defekten und Firmware-Recovery
-			\item Fernsteuerung und Ausführung der Tests per SSH
 		\end{itemize}	
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Funktionsumfang (2/2)}
+		\vfill
+		Das Testframework soll unter anderem folgende Funktionen bieten:
+		\vfill
 		\begin{itemize}
-			\item Testumfang:
-			\item Vorbedingung(en)
-			\item Aktion
-			\item Erwartung
-			\item Timeout
-			\item Logging
-			\item Ergebnis
+			\item Steuerung der Tests per Weboberfläche und SSH
+			\item Erkennung von Software-Defekten und Firmware-Recovery
 			\item Automatischer Abruf neuer Firmware-Images vom Buildserver
 			\item Unattended Betriebsmodus
 			\item Ergebnisreport per Email
 			\item Archivierung von Testberichten und Logdateien (syslog, dmesg)
 		\end{itemize}	
 	\end{frame}
-	
 	\begin{frame}
 		\frametitle{Beispielhafte Tests}
 		\begin{itemize}
 		    \item Durchlaufen des Konfigurationsassistenten
 		    \item Log-Prüfung, z.B. auf Kernel Panics
-		    \item Autoupdater
 		    \item Verbindung als WLAN-Client
 		    \item Erkennung von Mesh-Verbindungen
 		    \item Prüfung auf IPv6-Konnektivität
-		    \item Gateways
-		    \item Update-Server
-		    \item NTP
-		    \item Internet
-		    \item Überprüfung auf laufende Dienste
-		    \item Überprüfung auf NTP-Synchronisierung
+		    \item Erreichbarkeit der Gateways
+		    \item Verbindung zu Update-Server
+		    \item Funktion des Autoupdaters
+		    \item Zeitsynchronisation mit NTP
+		    \item Internet-Verindung für Clients
+		    \item Überprüfung der laufenden Dienste
  		\end{itemize}
 	\end{frame}
 \end{document}
