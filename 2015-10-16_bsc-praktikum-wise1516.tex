@@ -30,7 +30,7 @@
 		\vfill
 		\textbf{Was ist Freifunk?}
 		\vfill
-		\begin{itemize}
+		\begin{itemize}[<+->]
 			\item nichtkommerzielle Initiative
 			\item Ziel: Aufbau und Betrieb eines freien WLAN-Meshnetzes
 			\item dezentrales Netz besteht aus den Routern vieler einzelner Betreiber
@@ -47,8 +47,9 @@
 		    Konstruktion eines Testframeworks, das SOHO-Router mit einer Firmware beschreibt,
 		    konfiguriert und anschließend testet.
 		    \vfill
+		    \pause
 		    Hierzu wird die folgende Hardware bereitgestellt:
-		    \begin{itemize}
+		    \begin{itemize}[<+->]
 			    \item Managed Switch, 16 Port
 			    \item regelbare Steckdosenleiste (z.B. Ubiquiti mPower)
 			    \item Embedded ARM-Board, z.B. RasPi2 (Controller)
@@ -60,13 +61,14 @@
 		\frametitle{Aufgabenstellung (2/2)}
 		\vfill
 		Vorgaben zur Realisierung
-		\begin{itemize}
+		\begin{itemize}[<+->]
 			\item für Debian-basierte Linuxdistributionen (z.B. Raspbian)
 			\item mit Python 3 (>=3.3) nach gängigen Standards (z.B. PEP8)
 			\item unter Revisionskontrolle mit Git und sprechenden Commit-Messages\footnote{vgl. \url{http://chris.beams.io/posts/git-commit/}}
 			\item lizensiert unter MIT, LGPL oder vergleichbaren Lizenzen
 		\end{itemize}
 		\vfill
+		\pause
 		Die Kommunikation mit den Routern erfolgt im Regelfall per Telnet/SSH bzw. in späteren Ausbaustufen auch per tftp (Recovery, Image flashen) bzw. HTTP (Konfiguration/Ersteinrichtung über
 		Weboberfläche).
 		\vfill
@@ -77,7 +79,7 @@
 		    \vfill
 		    Für den Regelbetrieb ist ein Prüfstand mit folgendem Aufbau vorgesehen:
 		    \vfill
-			\begin{itemize}
+			\begin{itemize}[<+->]
 			    \item Bis zu 6 SOHO Router
 		    	\item LAN- und WAN-Port mit einem Managed Switch verbunden
 			    \item LAN per Trunk, getagged an den Controller (RasPi2) angebunden
@@ -92,7 +94,7 @@
 		\vfill
 		Das Testframework soll unter anderem folgende Funktionen bieten:
 		\vfill
-		\begin{itemize}
+		\begin{itemize}[<+->]
 			\item Hardwareerkennung (Model, Revision, Primäre MAC-Addresse)
 			\item Kaltstart der Geräte
 			\item Tests für einzelne Geräte starten/stoppen
@@ -109,7 +111,7 @@
 		\vfill
 		Das Testframework soll unter anderem folgende Funktionen bieten:
 		\vfill
-		\begin{itemize}
+		\begin{itemize}[<+->]
 			\item Steuerung der Tests per Weboberfläche und SSH
 			\item Erkennung von Software-Defekten und Firmware-Recovery
 			\item Automatischer Abruf neuer Firmware-Images vom Buildserver
@@ -120,7 +122,7 @@
 	\end{frame}
 	\begin{frame}
 		\frametitle{Beispielhafte Tests}
-		\begin{itemize}
+		\begin{itemize}[<+->]
 		    \item Durchlaufen des Konfigurationsassistenten
 		    \item Log-Prüfung, z.B. auf Kernel Panics
 		    \item Verbindung als WLAN-Client
