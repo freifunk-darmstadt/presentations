@@ -22,8 +22,8 @@
 }
 
 \title{\centering\includegraphics[width=\textwidth]{images/logo-skyline}}
-\author{}
-%\institute[Inst.]{Freifunk Darmstadt}
+\author{Freifunk Darmstadt,}
+\institute[Inst.]{eine Initiative des Chaos Darmstadt e.V.}% würde lieber „ein Projekt des“ schreiben.
 \date{\footnotesize 5. November 2015}
 
 \begin{document}
@@ -33,7 +33,7 @@
 \maketitle
 \end{frame}
 
-\addtobeamertemplate{frametitle}{}{%
+\addtobeamertemplate{frametitle}{}{
 \begin{textblock*}{100mm}(0.92\textwidth,-0.5cm)
 \includegraphics[height=1cm]{images/logo}
 \end{textblock*}}
@@ -46,13 +46,16 @@
 \begin{frame}
 	\frametitle{Was ist Freifunk?}
 
-	Deutschlandweite Initiative für freie WLAN-Netze
-	
+	\large \textbf{Deutschlandweite Initiative für \emph{freie} (wlan) Netze.}
 	\pause
 	\vfill
 	\centering
-	\includegraphics[scale=0.3]{images/2015-10_freifunk-map} \\
-	über 200 lokale Gruppen\\bundesweit ca. 20.000 offene Zugangspunkte
+	\includegraphics[scale=0.3]{images/2015-10_freifunk-map}
+	\itemize{
+	\item{über 200 lokale Gruppen}
+	\item{bundesweit ca. 20.000 offene Zugangspunkte}
+	\item{Teil einer weltweiten Bewegung für offene und freie Netze.}
+	}
 
 	
 \end{frame}
@@ -71,45 +74,41 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{Was kann man damit tun?}
+\begin{frame}{Warum ein freies Netz?}
 	\vfill
 	\begin{center}
 		\includegraphics[width=5.5cm]{images/verbindet}
 	\end{center}
 	
 	\begin{itemize}[<+->]
-		\item jeder kann Services anbieten und nutzen
+		\item \emph{gleichberechtigt} Netzwerkdienste anbieten und nutzen
 		\begin{itemize}
 			\item Telefonieren und Chatten
 			\item dezentrales Social-Media (z.B Diaspora, Twister)
 			\item lizenzfreies Community-Radio
 			\item Austausch von Dateien und Medien
-			\item Blogs
+			\item lokale Webseiten, Blogsl
 			\item \ldots
 		\end{itemize}
-		\item gemeinsame Nutzung eines Internetanschlusses
-		\item Testbed für wissenschaftliche Experimente
+		\item Internetzugänge \emph{teilen}
+		\item \emph{krisensichere} Netzwerktopologie
 	\end{itemize}
 	\vfill
 \end{frame}
 
 \begin{frame}
-	\frametitle{Vision}
-	
-	Wie soll unsere Kommunikationsinfrastruktur aussehen?
-	
-	\begin{itemize}[<+->]
-		\item offen und öffentlich
-		\item anonym zugänglich
-		\item nicht kommerziell
-		\item dezentral organisiert
-		\item unzensiert
-		\item datensparsam
-	\end{itemize}
+	\frametitle{Prinzipien}
+	\begin{centering}
+	\large{\textbf{Wie sollen Kommunikationsnetze beschaffen sein?}}
+	\end{centering}
+	\pause
+	\vfill
+	\includegraphics[width=1.1\textheight]{images/principles}$\;$
+
 \end{frame}
 
 \begin{frame}
-	\frametitle{Vision: offen und öffentlich}
+	\frametitle{Freifunk: offen und öffentlich}
 	\begin{columns}[c]
 		\begin{column}{5cm}
 			\includegraphics[width=\textwidth]{images/open}
@@ -120,97 +119,19 @@
 				\item Netz im (dezentralen) Besitz der Gemeinschaft
 				\item freier Zugang zu Netz und Diensten
 				\item keine Unterscheidung nach Ort oder Geldbeutel
+				\item \textbf{Unterstützung jederzeit willkommen!}
 			\end{itemize}
 		\end{column}
 	\end{columns}	
 \end{frame}
 
-\begin{frame}
-	\frametitle{Vision: anonymer Zugang}
-	\begin{center}
-		\includegraphics[width=5cm]{images/lock}
-	\end{center}
-	\begin{itemize}[<+->]
-		\item wir verlangen keine Nutzerregistrierung
-		\item Anonymer Zugang zum Netz möglich
-		\item Achtung: Freifunk ist kein Anonymisierungsdienst
-	\end{itemize}
 
-\end{frame}
-
-\begin{frame}
-	\frametitle{Vision: unkommerzieller Netzbetrieb}
-	\begin{columns}[c]
-		\begin{column}{4cm}
-			\includegraphics[width=\textwidth]{images/non-commercial-eu}
-		\end{column}
-		\begin{column}{8cm}
-			\begin{itemize}[<+->]
-				\item kostenloser Zugang zum Freifunknetz
-				\item wir verkaufen keine Benutzerdaten
-				\item keine Finanzierung durch Werbung
-			\end{itemize}
-		\end{column}
-	\end{columns}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Vision: Dezentralität}
-	
-	\begin{itemize}[<+->]
-		\item keine zentralen, für die Funktion des Netzes erforderlichen Funktionen
-		\item keine Abhängigkeit von einer Gruppe von Personen
-	\end{itemize}
-	\centering
-	\vfill
-	\includegraphics[width=5cm]{images/decentral}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Vision: Netzneutralität}
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{images/netneutrality}
-	\end{center}
-	Alle Daten werden gleichberechtigt übertragen:
-	\begin{itemize}[<+->]
-		\item keine Filterung der Inhalte
-		\item keine Zensur
-		\item keine Priorisierung
-	\end{itemize}
-
-	% Bilder dezentrales mesh, zustimmung
-\end{frame}
-
-\begin{frame}
-	\frametitle{Vision: Datensparsamkeit}
-		\begin{columns}[c]
-			\begin{column}{5cm}
-				\includegraphics[width=\textwidth]{images/krake}
-			\end{column}
-			\begin{column}{7cm}
-				\begin{itemize}[<+->]
-					\item keine Sammlung von Verbindungs- oder Verkehrsdaten
-					\item keine persönlichen Stammdaten
-					\item freiwillige Angabe von Kontaktdaten und Ort eines Knoten
-				\end{itemize}
-			\end{column}
-		\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Ziele von Freifunk}
-	\begin{itemize}[<+->]
-		\item Verständnis von Kommunikationsnetzen sowie deren Auswirkungen auf die Gesellschaft fördern
-		\item Teilnahme der Bevölkerung an Forschung und Aufbau dezentraler Netze
-		\item unser Wissen und Software öffentlich zugänglich machen
-		\item Beteiligung an politischen Prozessen, um die rechtlichen Voraussetzungen für freie Netze zu schaffen
-	\end{itemize}
-\end{frame}
 
 \section{Wie funktioniert Freifunk?}
 
 \begin{frame}{Ohne Freifunk}
 	\begin{center}
+		%TODO es irgendwie hinbekommen dass die grafiken an einer position beginnen. liegt an dem Text der darunter ist glaube ich.
 		\includegraphics[height=6cm]{images/network_1} \\
 		\vfill
 		Viele geschlossene (WLAN-)Netze, die nicht miteinander kommunizieren
@@ -251,88 +172,16 @@
 	\end{center}
 \end{frame}
 
-\section{Rechtliche Aspekte und Risiken}
-
-\begin{frame}{Internet teilen vs. Störerhaftung}
-	
-	\begin{columns}[c]
-		\begin{column}{4cm}
-			\includegraphics[width=\textwidth]{images/recht}
-		\end{column}
-		\begin{column}{8cm}
-	\begin{itemize}
-		\item Teilen des eigenen Internetanschlusses ist in Deutschland legal
-		\pause\item \textbf{aber:} Mithaftung für illegale Aktivitäten, wenn Täter nicht zu ermitteln ist
-		\pause\item Abmahnkosten sind zu tragen
-	\end{itemize}
-	
-	\bigskip
-	\pause
-	
-	Unsere Lösungen:
-	\begin{itemize}
-		\item VPN zu unseren Gateways
-		\item eigener Anschluss im Internet nicht sichtbar
-		\item FFDA hat indirekt Providerprivileg (FFRL)
-	\end{itemize}
-		\end{column}
-	\end{columns}
-	
-	\vfill
-	\centering
-	\pause \textbf{Fazit:}\\Störerhaftung existiert noch, wir machen es aber sehr schwer,\\den eigentlichen Anschlussinhaber zu finden.
-
-\end{frame}
-
-\begin{frame}{Sicherheit im Freifunk-Netz}
-	\begin{itemize}[<+->]
-		\item Freifunk als freies Netz bietet keinen Schutz
-		\item WLAN ist nicht verschlüsselt, vertrauliche Daten nur mit Ende-zu-Ende-Verschlüsselung (z.B. https) übertragen
-		\vfill
-		\item Daten im Freifunk-Netz: Gesamter Verkehr schwer zu überwachen
-		\pause\item Daten ins Internet: Betreiber der Gateways können überwachen
-	\end{itemize}
-	\vfill
-	\pause
-	\centering
-	\textbf{Fazit:}\\Zentrale Überwachung und Zensur deutlich schwieriger als im Internet, \\
-	Benutzer sind selbst verantwortlich für Schutz und Verschlüsselung.
-\end{frame}
 
 \section{Freifunk in Darmstadt}
-
-\begin{frame}{Freifunk Darmstadt (FFDA)}
-	\begin{columns}[c]
-		\begin{column}{4cm}
-			\includegraphics[width=\textwidth]{images/cda}
-		\end{column}
-		\begin{column}{8cm}
-			\begin{itemize}
-				\item Projekt des Chaos Darmstadt e.V., Erfa-Kreis des CCC
-				\item 13. Februar 2014: erstes FFDA-Treffen
-			\end{itemize}
-		\end{column}
-	\end{columns}
-\end{frame}
-\begin{frame}{1.x Jahre FFDA-Netz}
-	\vfill
-	\begin{itemize}[<+->]
-		\item 26. Juni 2014: erster Knoten geht online
-		\item vor einem Jahr: ca. 30 Knoten
-		\item heute: 280 Knoten, davon ca. 220 online
-	\end{itemize}
-	\pause
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/ffda-Okt14-15}
-	\end{center}
-\end{frame}
 
 \begin{frame}{Stand Oktober 2015}
 	\begin{center}
 		\vfill
-		ca. 220 Knoten, über 400 Clients
+		ca. 240 Knoten, ca. 1000 Clients
 		\begin{center}
-			\includegraphics[width=0.7\textwidth]{images/2015-10-03_darmstadt-map}
+			\only<1>{\includegraphics[height=6.5cm]{images/2015-10-03_darmstadt-map}}
+			\only<2>{\includegraphics[height=6.5cm]{images/2015-10-30_darmstadt-map}}
 		\end{center}
 		
 		\vfill
@@ -342,73 +191,51 @@
 	\end{center}	
 \end{frame}
 
-\begin{frame}{Aktuelle Aufgaben}
+\begin{frame}{1.x Jahre FFDA-Netz}
+	\vfill
+	\begin{itemize}[<+->]
+		\item 26. Juni 2014: erster Knoten geht online
+		\item vor einem Jahr: ca. 30 Knoten
+		\item heute: 280 Knoten, davon ca. 220 online
+	\end{itemize}
 	\begin{center}
-		\large Flüchtlingsheime mit Internet versorgen \\
+		{\includegraphics[width=0.8\textwidth]{images/ffda-Okt14-15}}
+		%TODO: prepare a graphic showing the refugee client-count explosion with labeled x- and y-axis
+	\end{center}
+\end{frame}
+
+
+\begin{frame}{Aktuelle Aufgaben}
+
+	\begin{center}
 		\includegraphics[width=0.7\textwidth]{images/2015-10_presse-fluechtlinge}
 	\end{center}
 	\begin{itemize}[<+->]
-		\item in Darmstadt: Starkenburg Kaserne, Donnersbergring, Sporthalle am Nordbad
-		\item auch in Eberstadt, Biebesheim, Stockstadt am Rhein
-		\item hoffentlich bald: Seeheim-Jugenheim, Wixhausen, Mühltal
-	\end{itemize}	
-\end{frame}	
-
-\begin{frame}{Aktuelle Aufgaben}
-	\begin{center}
-		\large Öffentlichkeitsarbeit
-		\vfill
-	\end{center}
-	\begin{itemize}[<+->]
-		\item Kontakt mit:
-		\begin{itemize}[<+->]
-			\item der Stadt Darmstadt und anderen Städten im Landkreis
-			\item politischen Parteien
-			\item Presse
-			\item Bewohner
-			\item NGOs, Vereine, Schulen, \ldots
-			\item Cafés, Hotels, Geschäfte, \ldots
-		\end{itemize}
-		\vfill
-		\item Vorträge und Workshops organisieren
-		\vfill
-		\item Sponsoren finden für Technik und öffentliche APs
+		\item \large Flüchtlingsheime mit Internet versorgen\\
+			\tiny auch in Eberstadt, Biebesheim, Stockstadt am Rhein\\
+			\tiny hoffentlich bald: Seeheim-Jugenheim, Wixhausen, Mühltal
+		\item Öffentlichkeitsarbeit und Community
+		\item Netzwerk: Wartung und Ausbau.
 	\end{itemize}
+
+
 \end{frame}
 
-\begin{frame}{Aktuelle Aufgaben}
-	\begin{center}
-		\large Netzwerkwartung
-		\vfill
-	\end{center}
-	\begin{columns}[T]
-		\begin{column}{5cm}
-			\includegraphics[width=\textwidth]{images/disassemble}
-		\end{column}
-		\begin{column}{7cm}
-			\begin{itemize}[<+->]
-				\item neue Firmware für Knoten
-				\item Analyse des Netzwerkstatus und Reaktion bei Problemen
-				\item Betrieb der Gateways ins Internet
-				\item Verbindung zu anderen Communities
-				\item Experimente mit unterschiedlichen Protokollen, Software und Hardware
-			\end{itemize}
-		\end{column}
-	\end{columns}
-\end{frame}
 
 \begin{frame}{Wir freuen uns auf Freiwillige}
-	\begin{itemize}[<+->]
+	\begin{itemize}
 		\item ca. 14 Menschen im Kernteam	
 		\item viel Arbeit seit Unterbringung der Flüchtlinge
 		\vfill
+		\pause
 		\item wir treffen uns jeden Montag um 19 Uhr
 		\item außerdem online im IRC (\#ffda @ hackint.org)
-		\item andere Kontaktmöglichkeiten auf unserer Webseite
+		\item andere Kontaktmöglichkeiten auf unserer Webseite:\\
+		\url{https://darmstadt.freifunk.net/kontakt/}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Q~\&~A}
+\begin{frame}{Q~\&~A $\rightarrow$ Workshop}
 \vfill
 \centering
 \includegraphics[width=0.7\textwidth]{images/irl_router}
