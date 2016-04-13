@@ -34,12 +34,12 @@
 			\item nichtkommerzielle Initiative
 			\item Ziel: Aufbau und Betrieb eines freien WLAN-Meshnetzes
 			\item dezentrales Netz besteht aus den Routern vieler einzelner Betreiber
-			\item ca. 20.000 Freifunk-Router in Deutschland
-			\item OpenWrt basierte Firmware von Enthusiasten in den Communities vor Ort entwickelt
+			\item über 30.000 Freifunk-Router in Deutschland, davon rund 400 in Darmstadt
+			\item auf OpenWrt basierte Firmware
 		\end{itemize}
 		\vfill
 		\pause
-		Um unkompliziert eigene Services im Freifunk-Netz anbieten zu können, soll im Rahmen dieses Projekts ein Dienst erstellt werden, der das Publizieren und Entdecken verfügbarer Services für den Knoten-Betreiber übernimmt.		
+		Um unkompliziert eigene Services im Freifunk-Netz anbieten zu können, soll im Rahmen dieses Projekts ein Dienst erstellt werden, der das einfache Publizieren und Entdecken verfügbarer Services für den Benutzer übernimmt.
 	\end{frame}
 
 	\begin{frame}
@@ -51,17 +51,18 @@
 	
 	\begin{frame}
 		\frametitle{Aufgabenstellung (1/2)}
-		    Entwicklung eines Publish- und Auto-Discovery-Dienstes, welcher lokal auf Freifunk-Routern ausgeführt wird.
-		    \vfill
-		    \pause
-		    Zusätzlich werden folgende Komponenten benötigt:
-		    \begin{itemize}
-		    	\item angebotene Dienste dem nächsten Freifunk-Router melden
-		    	\item ein zentrales Dienstverzeichnis
-		    \end{itemize}
-		    \vfill
-		    \pause
-		    Zur Unterstützung der Entwicklung und für Funktionstests werden zwei Router mit Freifunk-Firmware bereitgestellt.
+			Entwicklung eines dezentralen Publish- und Discovery-Dienstes, welcher auf Freifunk-Routern ausgeführt wird.
+			\vfill
+			\pause
+			Dafür werden folgende Komponenten benötigt:
+			\begin{itemize}
+			\item Endpunkt zum Registrieren von Serviceangeboten
+			\item Synchronisation vorhandener Serviceangebote mit Relays im gesamten Netzwerk
+			\item zusätzlicher zentraler Verzeichnisdienst
+			\end{itemize}
+			\vfill
+			\pause
+			Zur Unterstützung der Entwicklung und für Funktionstests werden zwei WiFi-Router mit der lokalen Freifunk-Firmware bereitgestellt.
 	\end{frame}
 	
 	\begin{frame}
@@ -70,7 +71,7 @@
 		Vorgaben zur Realisierung
 		\begin{itemize}
 			\item als Programmiersprache C oder C++
-			\item Paketierung für OpenWRT-basierte Systeme (OPKG)
+			\item Paketierung für OpenWRT-basierte Systeme (opkg)
 			\item unter Revisionskontrolle mit Git und sprechenden Commit-Messages\footnote{vgl. \url{http://chris.beams.io/posts/git-commit/}}
 			\item lizensiert unter MIT, LGPL oder vergleichbaren Lizenzen
 		\end{itemize}
