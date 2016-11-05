@@ -19,7 +19,7 @@
 %-----------------
 \title{Freifunk}
 \author{Das freie WLAN-Netz} % TODO: anderer Untertitel? Bürgernetz?
-\date{22. Juli 2016}
+\date{12. November 2016}
 \license{CC-BY-3.0}
 
 \begin{document}
@@ -29,24 +29,35 @@
   \begin{frame}{Was ist Freifunk?}
 
     % TODO: Überarbeiten (mit Icons)
-    \begin{itemize}
-      \item Initiative für freie (Funk-)Netze
-      \item Mitmachnetz: Netz in Nutzerhand
-      \item Offen für jeden, als Nutzer oder Betreiber
-      \item Nicht kommerziell
-      \item Krisensichere Kommunikation
-    \end{itemize}
+    \begin{columns}
+      \begin{column}{0.75\textwidth}
+        \begin{itemize}
+          \item Initiative für freie (Funk-)Netze
+          \item \textbf{Nicht kommerziell}
+          \item Mitmachnetz: \textbf{Netz in Nutzerhand}
+          \item \textbf{Offen} für jeden, als Nutzer oder Betreiber
+          \item Infrastruktur \textbf{dezentral} organisiert
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.25\textwidth}
+        \begin{center}
+          \includegraphics[width=\textwidth]{images/freifunk_insel_nc}\newline
+          \includegraphics[width=\textwidth]{images/up}\newline
+          \includegraphics[width=\textwidth]{images/talk}
+        \end{center}
+      \end{column}
+    \end{columns}
   \end{frame}
 
   %-----------------
   \begin{frame}{Was ist Freifunk?}
     \begin{center}
-      \includegraphics[width=7cm]{images/homerouter}
+      \includegraphics[height=0.65\textheight]{images/homerouter}
     \end{center}
   \end{frame}
 
   %-----------------
-  \foreach \index in {1, ..., 3, 5}
+  \foreach \index in {1, 2, 3, 5}
   {
     \begin{frame}{Das Netzwerk}
       \centering \includegraphics[width=9cm]{images/network_\index}
@@ -58,8 +69,9 @@
     \begin{columns}
       \begin{column}{0.6\textwidth}
         \begin{itemize}
-          \item Deutschlandweit über  \href{http://freifunk.net/wie-mache-ich-mit/community-finden/}{350 lokale Gruppen}
-          \item mehr als 37.700 offene Zugangspunkte
+          \item Deutschlandweit über  \href{http://freifunk.net/wie-mache-ich-mit/community-finden/}{\textbf{370} lokale Gruppen}
+          \item mehr als \textbf{38.200} offene Zugangspunkte
+
           % TODO: Zahlen auf den aktuellen Stand bringen
 
         \end{itemize}
@@ -82,38 +94,63 @@
 
 
   %-----------------
+  \begin{frame}{Freifunk Kelsterbach}
+    \begin{itemize}
+      \item Septerber 2015: Verein gegründet
+      \item Monatliche Treffen
+      \item Anlaufstelle für Interessierte
+    \end{itemize}
+    \begin{center}
+      \vspace{1em}
+      \includegraphics[width=0.5\textwidth]{images/ffkelsterbach-infoveranstaltung}
+    \end{center}
+  \end{frame}
+
   \begin{frame}{Freifunk Darmstadt}
     \begin{itemize}
-      \item Initiative des Chaos Darmstadt e.V.
-      \item Über 480 Freifunk-Router in Darmstadt und Umgebung
-      \item Täglich über 1000 Nutzer gleichzeitig online
+      \item Initiative des \textbf{Chaos Darmstadt e.V.}
+      \item Über \textbf{480} Freifunk-Router in Darmstadt und Umgebung
+      \item Täglich über \textbf{1000} Nutzer gleichzeitig online
       %\item Ermöglicht durch eine starke Freifunk-Community mit großem ehrenamtlichen Einsatz
     \end{itemize}
+    \begin{center}
+      \vspace{1em}
+      \includegraphics[width=0.3\textwidth]{images/cda_transparent}
+    \end{center}
   \end{frame}
+
 
   %-----------------
   \begin{frame}{Stadt Darmstadt}
     \begin{itemize}
-      \item September 2015: Kooperation mit OB Partsch, Stadt Darmstadt vereinbart
-      \item Bis Weihnachten wurden alle angefragten Unterkünfte mit WLAN versorgt
-      \item Großartige Zusammenarbeit mit ASB, DRK, Feuerwehr und der städtischen IT
-      \item IT Materialkosten < 5.000 \texteuro
+      \item September 2015: \textbf{Kooperation} mit OB Partsch, Stadt Darmstadt vereinbart
+      \item Bis Weihnachten wurden \textbf{alle angefragten Unterkünfte} mit WLAN versorgt
+      \item Großartige Zusammenarbeit mit \textbf{ASB, DRK, Feuerwehr} und der städtischen IT
+      \item Materialkosten < 5.000 \texteuro
     \end{itemize}
   \end{frame}
 
-  \begin{frame}{Babenhausen – 4 Monate Freifunk}
-    \begin{center}
-      \includegraphics[width=0.9\textwidth]{images/2016-07-21-babenhausen}
-    \end{center}
-  \end{frame}
+  %\begin{frame}{Babenhausen – 4 Monate Freifunk}
+  %  \begin{center}
+  %    \includegraphics[width=0.9\textwidth]{images/2016-07-21-babenhausen}
+  %  \end{center}
+  %\end{frame}
 
   %-----------------
   \begin{frame}{Störerhaftung}
-    \begin{itemize}
-      \item Keine Haftung für Knotenbetreiber
-      \item Internetverkehr geht über unsere Gateways. Haftungsbefreiung nach TMG \S8.
-      \item Wir nehmen die gesetzlichen Vorschriften wörtlich: Wir sammeln keine Daten.
-    \end{itemize}
+    \begin{columns}[T]
+      \begin{column}{0.6\textwidth}
+        \begin{itemize}
+          \item Keine Haftung für \textbf{Knotenbetreiber}
+          \item Internetverkehr geht über unsere Gateways. \textbf{Haftungsbefreiung} nach TMG \S8.
+          \item Wir nehmen die gesetzlichen Vorschriften wörtlich: \textbf{Wir sammeln keine Daten}.
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.4\textwidth}
+        \hspace{1em}
+        \includegraphics[width=\textwidth]{images/recht}
+      \end{column}
+    \end{columns}
   \end{frame}
 
   %-----------------
@@ -160,6 +197,11 @@
       \item Aufbau einer \textbf{lokalen Community} (falls nicht vorhanden) wünschenswert
       \item Andere Freifunk-Gruppen helfen gerne dabei und \textbf{geben Wissen weiter}
     \end{itemize}
+    \begin{center}
+      \includegraphics[height=0.28\textheight]{images/router}
+      \hspace{0.5em}
+      \includegraphics[height=0.28\textheight]{images/setup}
+    \end{center}
   \end{frame}
 
   %-----------------
@@ -170,6 +212,16 @@
     Freifunk für Geflüchtete!
   \end{frame}
 
+
+  \begin{frame}{Kelsterbach}
+    \center
+    \includegraphics[height=0.7\textheight]{images/ffkelsterbach-airporthotel-pressefoto.jpg}
+  \end{frame}
+
+  \begin{frame}{Kelsterbach}
+    \center
+    \includegraphics[height=0.75\textheight]{images/ffkelsterbach-airporthotel-internetcafee.jpg}
+  \end{frame}
 
   \begin{frame}{Groß-Gerau}
     \center
@@ -186,25 +238,20 @@
     \includegraphics[height=0.75\textheight]{images/unterkunft-stockstadt-dach.jpg}
   \end{frame}
 
-  \begin{frame}{Stockstadt}
-    \center
-    \includegraphics[height=0.75\textheight]{images/unterkunft-stockstadt-dach-aussicht.jpg}
-  \end{frame}
-
   \begin{frame}{In 6 Schritten zum Freifunk-Netz}
     \begin{itemize}
       \pause
-      \item Allgemeine Infos zur Unterkunft sammeln: Betreiber, Mieter, ...
+      \item \textbf{Allgemeine Infos} zur Unterkunft sammeln: Betreiber, Mieter, Größe, ...
       \pause
-      \item Woher kommt das Freifunk-Netz?
+      \item Woher kommt das \textbf{Freifunk-Netz}?
       \pause
-      \item Wer finanziert den Aufbau?
+      \item Wer \textbf{finanziert} den Aufbau?
       \pause
-      \item Kontakt zur Freifunk-Community
+      \item Kontakt zur \textbf{Freifunk-Community}
       \pause
-      \item Konkrete Detailplanung zusammen mit dem Betreiber
+      \item Konkrete \textbf{Detailplanung} zusammen mit dem Betreiber
       \pause
-      \item Aufbau
+      \item \textbf{Aufbau}
     \end{itemize}
   \end{frame}
 
@@ -224,8 +271,13 @@
         \item E-Mail: info@darmstadt.freifunk.net
         \item Treffen: Jeden Montag um 18:30 Uhr
       \end{itemize}
-      \vspace{1em}
-      \item Liste aller Communities auf \href{https://freifunk.net/}{freifunk.net}
+      \vspace{0.5em}
+      \item Freifunk Kelsterbach
+      \begin{itemize}
+        \item Webseite: \href{http://freifunk-kelsterbach.de}{freifunk-kelsterbach.de}
+        \item E-Mail: info@freifunk-kelsterbach.de
+        \item Treffen: Jeden 1. Mittwoch im Monat um 20:00 Uhr
+      \end{itemize}
     \end{itemize}
   \end{frame}
 \end{document}
